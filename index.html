@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Hillary es bandida?🤔 </title>
+    <style>
+        .body {
+            background-color: greenyellow;
+            text-align: center;
+        }
+
+        .body__title {
+            color: white;
+        }
+
+         .body__img{
+            width: 100%;
+            border-radius: 20%;
+         }
+    </style>
+</head>
+
+<body class="body">
+  <h1 class="body__title">¿Hillary es una Bandida?🤔</h1>
+  <img 
+    src="Foto hill portada.jpg" 
+    alt="foto de mi peticion" class="body__img"/>
+  <button id="yes">SI Soy Bandida😏 </button>
+  <button id="no" >obvio NO🙄</button>
+
+  <script>
+    const vutonsi = document.getElementById('yes');
+    const vutonno = document.getElementById('no');
+
+    const Eresunabandida = () => {
+        alert('jaja ya lo sabia, todas lo son!😘');
+        alert('ya fuera de bromas queria agradecerte por brindarme apoyo y ser un amor de persona conmigo,sos demasiado linda e vales mucho tenlo en cuenta siempre de verdad, te quiero montones besos😘');
+        location.href ='https://youtu.be/nPvyw4fVC7w?t=145';
+        };
+
+    const evitarquemerompaelcorazon = () => {
+        vutonno.style.position = 'absolute';
+        vutonno.style.top = (Math.random()* window.innerHeight) + 'px';
+        vutonno.style.left = (Math.random()* window.innerWidth) + 'px';
+    };
+
+    vutonsi.addEventListener('click', Eresunabandida);
+    vutonno.addEventListener('mouseover',evitarquemerompaelcorazon);
+  </script>
+  </body>
+
+</html> 
